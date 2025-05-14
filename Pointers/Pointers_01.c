@@ -23,17 +23,3 @@ int main() {
     
     return 0;
 }
-
-
-/* 
-%c: Character
-%s: String
-%d or %i: Signed integer
-%u: Unsigned integer
-%f: Floating-point number
-%e or %E: Exponential notation
-%g or %G: Shorter of %f or %e
-%o: Octal number
-%x or %X: Hexadecimal number
-%p: Pointer address
-*/
