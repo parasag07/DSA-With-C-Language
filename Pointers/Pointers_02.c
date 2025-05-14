@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Problem for Two Pointer Technique
+
 int main(){
     
     int arr[100];
