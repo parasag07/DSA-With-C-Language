@@ -7,11 +7,11 @@ int main() {
     
     // Use %d for actual value and %x for it's address
     // %d with *ptra and %x with ptra (x for hexadecimal)
-    printf("The value of a is %d\n", &a);
+    printf("The value of a is %d\n", a);
     printf("The value of a is %d\n", *ptra);    
     printf("Address of variable 'a': %p\n", &a);    
     printf("Address of variable 'a': %p\n", ptra);    
-    printf("Address of pointer 'ptra': %p\n", *ptra);    
+    printf("Address of pointer 'ptra': %p\n", &ptra);    
     
     
     return 0;
