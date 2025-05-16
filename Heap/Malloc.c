@@ -4,15 +4,14 @@
 int main()
 {
 
-    // Use of Calloc
-    // Calloc allocates the requested amount of memory malloc(n, sizeof())
-    // It assigns value 0 if no input is provided
+    // Use of Malloc
+    // Malloc allocates the requested amount of memory malloc(n*sizeof())
     int *ptr;
     int n, i;
 
     printf("Enter the size of array: \n");
     scanf("%d", &n);
-    ptr = (int *)calloc(n, sizeof(int));
+    ptr = (int *)malloc(3 * sizeof(int));
     for (i = 0; i < n; i++)
     {
         printf("Enter the value no %d of this array: \n", i);
