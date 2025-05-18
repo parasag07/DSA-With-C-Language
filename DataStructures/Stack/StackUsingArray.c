@@ -57,7 +57,7 @@ void pop(struct stack *s)
     }
 }
 
-void ValueAtPosition(struct stack *s, int pos)
+void Peek(struct stack *s, int pos)
 {
     if (pos > (s->size - 1))
     {
@@ -163,7 +163,7 @@ int main()
     case 4:
         printf("Enter the position at which you want the value:\n");
         scanf("%d", &pos);
-        ValueAtPosition(s, pos);
+        Peek(s, pos);
         break;
 
     case 5:
