@@ -57,7 +57,7 @@ void pop(struct stack *s)
     }
 }
 
-void Peek(struct stack *s, int pos)
+void ValueAtPosition(struct stack *s, int pos)
 {
     if (pos > (s->size - 1))
     {
@@ -96,7 +96,7 @@ void isFull(struct stack *ptr)
     }
 }
 
-void TopElement(struct stack *s)
+void Peek(struct stack *s)
 {
     if (s->top == -1)
     {
@@ -163,7 +163,7 @@ int main()
     case 4:
         printf("Enter the position at which you want the value:\n");
         scanf("%d", &pos);
-        Peek(s, pos);
+        ValueAtPosition(s, pos);
         break;
 
     case 5:
@@ -175,7 +175,7 @@ int main()
         break;
 
     case 7:
-        TopElement(s);
+        Peek(s);
         break;
 
     case 8:
