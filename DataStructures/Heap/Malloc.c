@@ -11,7 +11,7 @@ int main()
 
     printf("Enter the size of array: \n");
     scanf("%d", &n);
-    ptr = (int *)malloc(3 * sizeof(int));
+    ptr = (int *)malloc(n * sizeof(int));
     for (i = 0; i < n; i++)
     {
         printf("Enter the value no %d of this array: \n", i);
