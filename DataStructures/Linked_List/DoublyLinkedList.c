@@ -96,12 +96,14 @@ struct node* insert_in_between(struct node* head){
         int pos, k = 1;
         printf("Enter the position at which you want to enter the element: ");
         scanf("%d", &pos);
-        if(pos <= 0){
-            printf("Position entered is less than/equal to zero, Element will be inserted at the beginning.\n");
-            head = insert_at_beginning(head);
-        }
-        else if(pos == 1){
-            head = insert_at_beginning(head);
+        if(pos <= 0 || pos == 1){
+            if(pos == 1){
+                head = insert_at_beginning(head);
+            }
+            else{    
+                printf("Position entered is less than/equal to zero, Element will be inserted at the beginning.\n");
+                head = insert_at_beginning(head);
+            }
         }
         else if(pos >= size_of_list(head)){
             printf("Position entered either exceeds the size of list or is equal to it. Element will be inserted at end.\n");
